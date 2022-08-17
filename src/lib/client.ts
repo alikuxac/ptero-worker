@@ -11,13 +11,13 @@ const options = {
     3: '?include=subusers',
 }
 
-export default class client {
+export default class Client {
     host: string;
     key?: string;
 
-    constructor(host: string, key?: string) {
-        this.host = host;
-        this.key = key;
+    constructor() {
+        this.host = PTERO_URL;
+        this.key = PTERO_KEY;
     }
 
     private getHeaders() {
